@@ -1,0 +1,41 @@
+.max-width {
+    max-width: 70%;
+    margin: auto;
+}
+
+/* flex is property is css which help us to dedisgn responsive design or webpage */
+.flex {
+    display: flex;
+}
+
+.absolute-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+@media all and (max-width: 1279px) {
+    .max-width {
+        max-width: 80%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .max-width {
+        max-width: 90%;
+    }
+
+    .non-mobile {
+        display: none !important;
+    }
+}
+
+@media all and (min-width: 766px) {
+    .only-mobile {
+        /* if the screen width is greater than 766px then components those are for mobile will not be displayed */
+        display: none !important;
+    }
+}
